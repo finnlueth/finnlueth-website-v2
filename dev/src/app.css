@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--color-bg);
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+.gradient__bg {
+    /* ff 3.6+ */
+    background:-moz-linear-gradient(90deg, rgba(255, 173, 0, 1) 0%, rgba(255, 76, 36, 1) 100%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(90deg, rgba(255, 173, 0, 1) 0%, rgba(255, 76, 36, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(90deg, rgba(255, 173, 0, 1) 0%, rgba(255, 76, 36, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF4C24', endColorstr='#FFAD00', GradientType=0 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(90deg, rgba(255, 173, 0, 1) 0%, rgba(255, 76, 36, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(90deg, rgba(255, 173, 0, 1) 0%, rgba(255, 76, 36, 1) 100%);
+}
+
+.gradient__text {
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section__padding {
+    padding: 4rem 6rem;
+}
+
+.section__margin {
+    margin: 4rem 6rem;
+}
+
+.scale-up-top {
+	-webkit-animation: scale-up-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: scale-up-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/* ----------------------------------------
+animation scale-up-top
+---------------------------------------- */
+ @-webkit-keyframes scale-up-top {
+    0% {
+      -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+      -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+            transform: scale(1);
+      -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    }
+  }
+  @keyframes scale-up-top {
+    0% {
+      -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+      -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+            transform: scale(1);
+      -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    }
+  }
+
+  @media screen and (maxWidth: 700px) {
+        .section__padding {
+            padding: 4rem;
+        }
+        .section__margin {
+            margin: 4rem;  
+        }
+  }
+  
