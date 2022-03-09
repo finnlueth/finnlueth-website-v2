@@ -1,0 +1,1 @@
+export {default as BioModel } from './3d-models-spline/Model1.jsx';

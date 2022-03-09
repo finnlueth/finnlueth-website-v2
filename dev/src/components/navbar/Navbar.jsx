@@ -8,22 +8,25 @@ import logo from '../../assets/logo.png'
 
 const Navbar = () => {
   return (
-    <div className='navbar'> 
-        <div className='navbar-links'>
-            <div className='navbar-links_logo'>
-                <img src={logo} alt="logo"/>
+    <div className='navbar-container'>
+        <div className='navbar'> 
+            <div className='navbar-links'>
+                <div className='navbar-links_logo'>
+                    <img src={logo} alt="logo"/>
+                </div>
+                <div className='navbar-links_container'>
+                    <p><a href='#home'/>Home</p>
+                    <p><a href='#about'/>About</p>
+                    <p><a href='#resume'/>Resume</p>
+                    <p><a href='#projects'/>Projects</p>
+                    <p><a href='#other'/>Other</p>
+                </div>
+            <div className='navbar-apps'>
+                <button type='button'>
+                    <IoAppsSharp className='navbar-apps_logo'/>
+                </button>
             </div>
-            <div className='navbar-links_container'>
-                <p><a href='#home'/>Home</p>
-                <p><a href='#about'/>About</p>
-                <p><a href='#projects'/>Projects</p>
-                <p><a href='#other'/>Other</p>
             </div>
-        </div>
-        <div className='navbar-apps'>
-            <button type='button'>
-                <IoAppsSharp className='navbar-apps_logo'/>
-            </button>
         </div>
     </div>
   )
