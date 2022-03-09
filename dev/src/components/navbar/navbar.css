@@ -1,14 +1,9 @@
-.navbar-container {
-    margin: 1rem 0rem 1rem 0rem;
-    padding: 0% 15% 0% 15%;
-}
-
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 2rem 6rem;
+    padding: 1rem 3rem;
     border-radius: 15px;
 
     /* ff 3.6+ */
@@ -33,12 +28,13 @@
 .navbar-links {
     flex: 1;
     display: flex;
-    justify-content:  flex-start;
+    justify-content: left;
     align-items: center ;
 }
 
 .navbar-links_logo {
     margin-right: 2rem;
+    
 }
 
 .navbar-links_logo img {

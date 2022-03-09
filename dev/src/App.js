@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div className='App'>
             <Navbar />
-            <BioModel />
+            {/* <BioModel /> */}
             <Brand />
             <Blog />
             <Footer />

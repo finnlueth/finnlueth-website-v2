@@ -7,6 +7,11 @@
 
 body {
     background: var(--color-bg);
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 0% 15% 0% 15%;
+
+    display: block;
+    overflow:  hidden;
 }
 
 a {

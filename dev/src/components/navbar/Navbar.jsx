@@ -8,14 +8,13 @@ import logo from '../../assets/logo.png'
 
 const Navbar = () => {
   return (
-    <div className='navbar-container'>
-        <div className='navbar'> 
+    <section className='navbar'>
+        <div className='navbar-container'> 
             <div className='navbar-links'>
                 <div className='navbar-links_logo'>
-                    <img src={logo} alt="logo"/>
+                    <img src={logo} alt="logo" href='finnlueth.com'/>
                 </div>
                 <div className='navbar-links_container'>
-                    <p><a href='#home'/>Home</p>
                     <p><a href='#about'/>About</p>
                     <p><a href='#resume'/>Resume</p>
                     <p><a href='#projects'/>Projects</p>
@@ -28,7 +27,7 @@ const Navbar = () => {
             </div>
             </div>
         </div>
-    </div>
+    </section>
   )
 }
 
